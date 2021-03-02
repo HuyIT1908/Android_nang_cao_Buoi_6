@@ -43,8 +43,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 //        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
 //        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
-        LatLng haNoi = new LatLng(21.027763, 105.834160);
-        mMap.addMarker(new MarkerOptions().position(haNoi).title("Thủ đô Hà Nội"));
+        LatLng haNoi = new LatLng(21.038381414157442, 105.74673969294757);
+        mMap.addMarker(new MarkerOptions().position(haNoi).title("Trường Cao đẳng FPT Polytechnic"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(haNoi));
+        mMap.animateCamera(CameraUpdateFactory.zoomTo(15.0f));
     }
 }
